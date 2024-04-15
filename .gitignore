@@ -15,8 +15,6 @@ coverage
 .next/
 out/
 build
-remoteImagesForOptimization/
-public/
 
 # misc
 .DS_Store
