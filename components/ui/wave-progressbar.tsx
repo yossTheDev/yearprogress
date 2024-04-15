@@ -12,7 +12,7 @@ const WaveProgressbar: React.FC<Props> = ({ value }) => {
 
   return (
     <div className="flex items-center justify-center gap-4">
-      <div className="relative flex h-72 w-32 cursor-pointer items-center justify-center overflow-hidden rounded-lg  bg-neutral-200 dark:bg-neutral-900">
+      <div className="relative flex h-72 w-32 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-neutral-200  hover:shadow-xl dark:bg-neutral-900">
         <motion.div
           animate={{ rotateZ: 360 }}
           style={{ backgroundColor: "#FF00FF", bottom: -val + "px" }}

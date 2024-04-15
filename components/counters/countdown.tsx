@@ -14,8 +14,6 @@ export const Countdown: React.FC<Props> = ({ type = "custom", value }) => {
 
   useEffect(() => {
     if (type !== "custom") {
-      console.log("interval")
-      console.log(val)
       const interval = setInterval(
         () => {
           setValue(val - 1)

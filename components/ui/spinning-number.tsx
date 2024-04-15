@@ -29,7 +29,6 @@ export const SpinningNumber = ({
       tempElement.style.fontSize = window.getComputedStyle(element).fontSize
       tempElement.style.fontFamily = window.getComputedStyle(element).fontFamily
       tempElement.style.lineHeight = window.getComputedStyle(element).lineHeight
-      console.log(window.getComputedStyle(element).lineHeight)
       tempElement.innerHTML = "dummy"
       element.appendChild(tempElement)
       setLineHeight(tempElement.offsetHeight)
