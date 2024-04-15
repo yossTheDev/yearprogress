@@ -1,9 +1,9 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "Year Progress",
+  name: "Year Progress - New Year Count Down",
   description:
-    "new Year Countdown.  It shows the remaining days, hours, minutes, and seconds until the new year arrives.",
+    "New Year Countdown.  It shows the remaining days, hours, minutes, and seconds until the new year arrives.",
   mainNav: [
 
   ],
