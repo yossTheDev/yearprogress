@@ -8,13 +8,21 @@ import WaveProgressbar from "@/components/ui/wave-progressbar"
 import { CounterSection } from "@/components/counters/counters-section"
 
 export default function IndexPage() {
-  const now = DateTime.now()
-  const startOfYear = DateTime.local().set({ month: 0, day: 1 })
-  const endOfYear = DateTime.local().set({ month: 12, day: 31 })
+  function progress(): number {
+    const now: Date = new Date()
+    const start: Date = new Date(now.getFullYear(), 0, 1)
+    const end: Date = new Date(now.getFullYear() + 1, 0, 1)
+    const done: number =
+      (now.getTime() - start.getTime()) / (end.getTime() - start.getTime())
+    let percentStr: string = (100.0 * done).toString()
+    if (done < 0.1) {
+      percentStr = percentStr.slice(0, 9)
+    } else {
+      percentStr = percentStr.slice(0, 10)
+    }
 
-  const totalDays = endOfYear.diff(startOfYear).as("days")
-  const daysPassed = now.diff(startOfYear).as("days")
-  const percentageCompleted = (daysPassed / totalDays) * 100
+    return done * 100
+  }
 
   return (
     <section className="container flex flex-col gap-6 pb-8">
@@ -62,13 +70,10 @@ export default function IndexPage() {
         <p className="mb-16 text-3xl font-bold md:hidden">Year Progress</p>
 
         <div className="mt-14 flex items-center justify-center gap-2 md:mt-0 md:w-2/5">
-          <WaveProgressbar value={percentageCompleted}></WaveProgressbar>
+          <WaveProgressbar value={progress()}></WaveProgressbar>
 
           <h2 className="ml-4 flex text-3xl font-bold md:text-7xl">
-            <SpinningNumber
-              value={Math.floor(percentageCompleted)}
-            ></SpinningNumber>
-            %
+            <SpinningNumber value={Math.floor(progress())}></SpinningNumber>%
           </h2>
         </div>
       </section>
