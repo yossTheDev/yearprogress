@@ -18,43 +18,32 @@ export const CounterSection = () => {
 
   return (
     <>
-      <div className="flex h-screen items-center justify-center gap-8">
+      <div className="mb-20 flex h-screen items-center justify-center gap-8">
         <WaveProgressbar value={percentageCompleted}></WaveProgressbar>
         <div className="flex flex-col gap-2">
-          <h1 className="bg-clip-text text-center text-5xl font-bold ">
-            Year Progress
-          </h1>
-          <h2 className="text-2xl font-bold">
+          <h2 className="text-3xl font-bold md:text-7xl">
             {Math.floor(percentageCompleted)}%
           </h2>
         </div>
       </div>
 
       <div className="flex h-screen flex-col items-center gap-4">
-        <p className="bg-gradient-to-br from-neutral-300 to-neutral-100 bg-clip-text text-2xl font-bold text-transparent">
-          Seconds
-        </p>
+        <p className="text-2xl font-bold">Seconds</p>
         <Countdown type="seconds" value={timeLeft.as("seconds")}></Countdown>
       </div>
 
       <div className="flex h-screen flex-col items-center gap-4">
-        <p className="bg-gradient-to-br from-neutral-300 to-neutral-100 bg-clip-text text-2xl font-bold text-transparent">
-          Minutes
-        </p>
+        <p className="text-2xl font-bold">Minutes</p>
         <Countdown type="minutes" value={timeLeft.as("minutes")}></Countdown>
       </div>
 
       <div className="flex h-screen flex-col items-center gap-4">
-        <p className="bg-gradient-to-br from-neutral-300 to-neutral-100 bg-clip-text text-2xl font-bold text-transparent">
-          Hours
-        </p>
+        <p className="text-2xl font-bold">Hours</p>
         <Countdown value={timeLeft.as("hours")}></Countdown>
       </div>
 
       <div className="flex h-screen flex-col items-center gap-4">
-        <p className="bg-gradient-to-br from-neutral-300 to-neutral-100 bg-clip-text text-2xl font-bold text-transparent">
-          Days
-        </p>
+        <p className="text-2xl font-bold">Days</p>
         <Countdown value={timeLeft.as("days")}></Countdown>
       </div>
     </>
