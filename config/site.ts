@@ -1,18 +1,14 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "Next.js",
+  name: "Year Progress",
   description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
+    "new Year Countdown.  It shows the remaining days, hours, minutes, and seconds until the new year arrives.",
   mainNav: [
-    {
-      title: "Home",
-      href: "/",
-    },
+
   ],
   links: {
-    twitter: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn/ui",
-    docs: "https://ui.shadcn.com",
+    twitter: "https://twitter.com/yossthedev",
+    github: "https://github.com/yossTheDev/yearprogress",
   },
 }

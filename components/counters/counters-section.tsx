@@ -18,7 +18,17 @@ export const CounterSection = () => {
 
   return (
     <>
-      <WaveProgressbar value={percentageCompleted}></WaveProgressbar>
+      <div className="flex h-screen items-center justify-center gap-8">
+        <WaveProgressbar value={percentageCompleted}></WaveProgressbar>
+        <div className="flex flex-col gap-2">
+          <h1 className="bg-clip-text text-center text-5xl font-bold ">
+            Year Progress
+          </h1>
+          <h2 className="font-bold text-2xl">
+            {Math.floor(percentageCompleted)}%
+          </h2>
+        </div>
+      </div>
 
       <div className="flex flex-col items-center h-screen gap-4">
         <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-neutral-300 to-neutral-100">
