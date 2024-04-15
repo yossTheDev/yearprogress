@@ -20,6 +20,15 @@ export const metadata: Metadata = {
     { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "black" },
   ],
+  openGraph: {
+    images: [
+      {
+        url: "/og.png",
+        width: 1920,
+        height: 1280,
+      },
+    ],
+  },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon-16x16.png",
