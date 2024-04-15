@@ -58,15 +58,3 @@
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
-
-.background {
-  background: url("../assets/ffflux-light.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.background:is(.dark *) {
-  background: url("../assets/ffflux.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}

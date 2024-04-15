@@ -11,7 +11,7 @@ const WaveProgressbar: React.FC<Props> = ({ value }) => {
   const [val] = useState(300 - value * 3)
 
   return (
-    <div className="flex h-screen items-center justify-center gap-4">
+    <div className="flex items-center justify-center gap-4">
       <div className="relative flex h-72 w-32 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-[#1b1b1d] hover:bg-[#1b1b1d]/80">
         <motion.div
           animate={{ rotateZ: 360 }}
