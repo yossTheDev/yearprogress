@@ -6,6 +6,7 @@ import { Meteors } from "@/components/ui/meteors"
 import { SpinningNumber } from "@/components/ui/spinning-number"
 import WaveProgressbar from "@/components/ui/wave-progressbar"
 import { CounterSection } from "@/components/counters/counters-section"
+import { RealtimeCountdown } from "@/components/counters/realtime-countdown"
 
 export default function IndexPage() {
   function progress(): number {
@@ -34,6 +35,8 @@ export default function IndexPage() {
           <h1 className="mt-20 text-center text-5xl font-bold md:mt-0 md:w-4/5 md:text-6xl">
             How long before the end of the year?
           </h1>
+
+          <RealtimeCountdown></RealtimeCountdown>
 
           {/* Tags */}
           <div className="flex h-fit w-60 gap-2 overflow-auto px-4 py-2 md:w-fit">
