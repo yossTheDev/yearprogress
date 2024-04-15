@@ -24,35 +24,35 @@ export const CounterSection = () => {
           <h1 className="bg-clip-text text-center text-5xl font-bold ">
             Year Progress
           </h1>
-          <h2 className="font-bold text-2xl">
+          <h2 className="text-2xl font-bold">
             {Math.floor(percentageCompleted)}%
           </h2>
         </div>
       </div>
 
-      <div className="flex flex-col items-center h-screen gap-4">
-        <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-neutral-300 to-neutral-100">
+      <div className="flex h-screen flex-col items-center gap-4">
+        <p className="bg-gradient-to-br from-neutral-300 to-neutral-100 bg-clip-text text-2xl font-bold text-transparent">
           Seconds
         </p>
         <Countdown type="seconds" value={timeLeft.as("seconds")}></Countdown>
       </div>
 
-      <div className="flex flex-col items-center h-screen gap-4">
-        <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-neutral-300 to-neutral-100">
+      <div className="flex h-screen flex-col items-center gap-4">
+        <p className="bg-gradient-to-br from-neutral-300 to-neutral-100 bg-clip-text text-2xl font-bold text-transparent">
           Minutes
         </p>
         <Countdown type="minutes" value={timeLeft.as("minutes")}></Countdown>
       </div>
 
-      <div className="flex flex-col items-center h-screen gap-4">
-        <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-neutral-300 to-neutral-100">
+      <div className="flex h-screen flex-col items-center gap-4">
+        <p className="bg-gradient-to-br from-neutral-300 to-neutral-100 bg-clip-text text-2xl font-bold text-transparent">
           Hours
         </p>
         <Countdown value={timeLeft.as("hours")}></Countdown>
       </div>
 
-      <div className="flex flex-col items-center h-screen gap-4">
-        <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-neutral-300 to-neutral-100">
+      <div className="flex h-screen flex-col items-center gap-4">
+        <p className="bg-gradient-to-br from-neutral-300 to-neutral-100 bg-clip-text text-2xl font-bold text-transparent">
           Days
         </p>
         <Countdown value={timeLeft.as("days")}></Countdown>
