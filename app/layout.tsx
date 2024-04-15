@@ -42,7 +42,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           )}
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <div className="relative flex h-screen min-h-screen flex-col">
+            <div className="relative flex h-screen min-h-screen w-screen flex-col overflow-x-hidden">
               <SiteHeader />
               <Meteors number={20} />
 

@@ -18,8 +18,8 @@ export default function IndexPage() {
   return (
     <section className="container flex flex-col gap-6 pb-8">
       {/* Hero */}
-      <section className="flex h-screen  flex-col items-center justify-center md:flex-row">
-        <div className="flex flex-col items-center justify-center gap-4 md:w-3/5">
+      <section className="flex flex-col items-center justify-center md:h-screen md:flex-row">
+        <div className="flex h-screen flex-col items-center justify-center gap-4 md:h-fit md:w-3/5">
           <h1 className="mt-20 text-center text-5xl font-bold md:mt-0 md:w-4/5 md:text-6xl">
             How long before the end of the year?
           </h1>
@@ -55,6 +55,8 @@ export default function IndexPage() {
             </a>
           </div>
         </div>
+
+        <p className="mb-16 text-3xl font-bold md:hidden">Year Progress</p>
 
         <div className="mt-14 flex items-center justify-center gap-2 md:mt-0 md:w-2/5">
           <WaveProgressbar value={percentageCompleted}></WaveProgressbar>
