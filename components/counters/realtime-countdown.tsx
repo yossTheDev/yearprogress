@@ -37,6 +37,6 @@ export const RealtimeCountdown = () => {
   }, [timeLeft])
 
   return (
-    <p className="text-center text-neutral-800 dark:text-neutral-400">{`${timeLeft.months} months, ${timeLeft.days} days, ${timeLeft.hours} hours, ${timeLeft.minutes} minutes, ${timeLeft.seconds} seconds`}</p>
+    <h2 className="text-center text-neutral-800 dark:text-neutral-400">{`${timeLeft.months} months, ${timeLeft.days} days, ${timeLeft.hours} hours, ${timeLeft.minutes} minutes, ${timeLeft.seconds} seconds`}</h2>
   )
 }

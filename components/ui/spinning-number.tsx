@@ -46,7 +46,10 @@ export const SpinningNumber = ({
         <div
           ref={ref}
           className="relative flex items-center justify-center overflow-hidden"
-          style={{ width: splitted.length * lineHeight, height: lineHeight }}
+          style={{
+            width: splitted.length * lineHeight - 15,
+            height: lineHeight,
+          }}
         >
           {splitted.map((num, i) => (
             <SingleNumber
@@ -86,7 +89,7 @@ export const SingleNumber = ({
   return (
     <motion.div
       data-testid="single-number"
-      className="absolute flex flex-col select-none "
+      className="absolute flex select-none flex-col"
       style={{ left: index * lineHeight }}
       animate={{ top: y }}
       transition={{ ease: "backInOut", duration: animationDuration / 1000 }}

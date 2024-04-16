@@ -30,7 +30,7 @@ export const Countdown: React.FC<Props> = ({ type = "custom", value }) => {
     <SpinningNumber
       animationDuration={1000}
       value={Math.floor(val)}
-      className=" overflow-hidden text-3xl font-bold md:text-7xl"
+      className=" overflow-hidden text-3xl font-bold md:text-7xl items-center justify-center w-fit flex"
     />
   )
 }

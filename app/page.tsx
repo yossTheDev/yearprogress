@@ -75,9 +75,10 @@ export default function IndexPage() {
         <div className="mt-14 flex items-center justify-center gap-2 md:mt-0 md:w-2/5">
           <WaveProgressbar value={progress()}></WaveProgressbar>
 
-          <h2 className="ml-4 flex text-3xl font-bold md:text-7xl">
-            <SpinningNumber value={Math.floor(progress())}></SpinningNumber>%
-          </h2>
+          <p className="ml-4 flex gap-1 text-3xl font-bold md:text-7xl">
+            <SpinningNumber value={Math.floor(progress())}></SpinningNumber>
+            <span>%</span>
+          </p>
         </div>
       </section>
 
