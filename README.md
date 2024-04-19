@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-<a href="https://year-progress.vercel.app/" target="_blank">year-progress.pages.dev</a>
+<a href="https://year-progress.pages.dev/" target="_blank">year-progress.pages.dev</a>
 </p>
 
 ![blog](docs/banner.png)
